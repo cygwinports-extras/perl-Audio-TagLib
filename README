@@ -3,21 +3,20 @@ perl-Audio-TagLib
 Perl bindings for TagLib audio tag library.
 
 Runtime requirements:
-  cygwin-1.5.19-4
-  libiconv2-1.9.2-2
+  cygwin-1.5.24-2
+  libiconv2-1.11-1
   perl-5.8.7-5
   taglib-1.4-1
 
 Build requirements:
-  cygwin-1.5.19-4
-  binutils-20050610-1
-  cygport-0.1.91-1
-  gcc-core-3.4.4-1
-  gcc-g++-3.4.4-1
-  make-3.80-1
+(besides corresponding devel packages)
+  cygwin-1.5.24-2
+  binutils-20060817-1
+  cygport-0.2.11-1
+  gcc-core-3.4.4-3
+  gcc-g++-3.4.4-3
+  make-3.81-1
   perl-5.8.7-5
-  libiconv-1.9.2-2
-  taglib-devel-1.4-1
 
 Canonical homepage:
   http://search.cpan.org/~dongxu/Audio-TagLib/
@@ -28,53 +27,54 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack perl-Audio-TagLib-1.42-X-src.tar.bz2
+  unpack perl-Audio-TagLib-1.43-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./perl-Audio-TagLib-1.42-X.cygport all
+  cygport ./perl-Audio-TagLib-1.43-X.cygport all
 
 This will create:
-  /usr/src/perl-Audio-TagLib-1.42-X-src.tar.bz2
-  /usr/src/perl-Audio-TagLib-1.42-X.tar.bz2
+  /usr/src/perl-Audio-TagLib-1.43-X-src.tar.bz2
+  /usr/src/perl-Audio-TagLib-1.43-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
   /etc/postinstall/perl-Audio-TagLib.sh
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/APE/Footer.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/APE/Item.pm
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/APE/ItemListMap/Iterator.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/APE/ItemListMap.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/APE/ItemListMap/Iterator.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/APE/Tag.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/AudioProperties.pm
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/ByteVector/Iterator.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/ByteVector.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/ByteVector/Iterator.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/ByteVectorList.pm
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/File.pm
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/FileRef/FileTypeResolver.pm
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/FileRef.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/FLAC/File.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/FLAC/Properties.pm
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/ID3v1/GenreMap/Iterator.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/File.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/FileRef.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/FileRef/FileTypeResolver.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/ID3v1.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/ID3v1/GenreMap.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/ID3v1/GenreMap/Iterator.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/ID3v1/StringHandler.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/ID3v1/Tag.pm
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/ID3v1.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/ID3v2/AttachedPictureFrame.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/ID3v2/CommentsFrame.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/ID3v2/ExtendedHeader.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/ID3v2/Footer.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/ID3v2/Frame.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/ID3v2/FrameFactory.pm
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/ID3v2/FrameList/Iterator.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/ID3v2/FrameList.pm
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/ID3v2/FrameListMap/Iterator.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/ID3v2/FrameList/Iterator.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/ID3v2/FrameListMap.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/ID3v2/FrameListMap/Iterator.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/ID3v2/Header.pm
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/ID3v2/RelativeVolumeFrame/PeakVolume.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/ID3v2/RelativeVolumeFrame.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/ID3v2/RelativeVolumeFrame/PeakVolume.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/ID3v2/SynchData.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/ID3v2/Tag.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/ID3v2/TextIdentificationFrame.pm
@@ -87,32 +87,31 @@ Files included in the binary package:
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/MPEG/Header.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/MPEG/Properties.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/MPEG/XingHeader.pm
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/Ogg/FieldListMap/Iterator.pm
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/Ogg/FieldListMap.pm
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/Ogg/File.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/Ogg/FLAC/File.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/Ogg/FieldListMap.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/Ogg/FieldListMap/Iterator.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/Ogg/File.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/Ogg/Page.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/Ogg/PageHeader.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/Ogg/Vorbis/File.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/Ogg/Vorbis/Properties.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/Ogg/XiphComment.pm
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/String/Iterator.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/String.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/String/Iterator.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/StringList.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/Tag.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/Vorbis/File.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib/Vorbis/Properties.pm
-  /usr/lib/perl5/vendor_perl/5.8/cygwin/Audio/TagLib.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Audio/TagLib/.packlist
   /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Audio/TagLib/TagLib.bs
   /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Audio/TagLib/TagLib.dll
-  /usr/share/doc/Cygwin/perl-Audio-TagLib-1.42.README
-  /usr/share/doc/perl-Audio-TagLib-1.42/BUGS
-  /usr/share/doc/perl-Audio-TagLib-1.42/Changes
-  /usr/share/doc/perl-Audio-TagLib-1.42/INSTALL
-  /usr/share/doc/perl-Audio-TagLib-1.42/LICENSE
-  /usr/share/doc/perl-Audio-TagLib-1.42/README
-  /usr/share/doc/perl-Audio-TagLib-1.42/TODO
+  /usr/share/doc/Cygwin/perl-Audio-TagLib-1.43.README
+  /usr/share/doc/perl-Audio-TagLib-1.43/BUGS
+  /usr/share/doc/perl-Audio-TagLib-1.43/Changes
+  /usr/share/doc/perl-Audio-TagLib-1.43/INSTALL
+  /usr/share/doc/perl-Audio-TagLib-1.43/LICENSE
+  /usr/share/doc/perl-Audio-TagLib-1.43/README
+  /usr/share/doc/perl-Audio-TagLib-1.43/TODO
   /usr/share/man/man3/Audio.TagLib.3pm.gz
   /usr/share/man/man3/Audio.TagLib.APE.Footer.3pm.gz
   /usr/share/man/man3/Audio.TagLib.APE.Item.3pm.gz
@@ -123,11 +122,11 @@ Files included in the binary package:
   /usr/share/man/man3/Audio.TagLib.ByteVector.3pm.gz
   /usr/share/man/man3/Audio.TagLib.ByteVector.Iterator.3pm.gz
   /usr/share/man/man3/Audio.TagLib.ByteVectorList.3pm.gz
+  /usr/share/man/man3/Audio.TagLib.FLAC.File.3pm.gz
+  /usr/share/man/man3/Audio.TagLib.FLAC.Properties.3pm.gz
   /usr/share/man/man3/Audio.TagLib.File.3pm.gz
   /usr/share/man/man3/Audio.TagLib.FileRef.3pm.gz
   /usr/share/man/man3/Audio.TagLib.FileRef.FileTypeResolver.3pm.gz
-  /usr/share/man/man3/Audio.TagLib.FLAC.File.3pm.gz
-  /usr/share/man/man3/Audio.TagLib.FLAC.Properties.3pm.gz
   /usr/share/man/man3/Audio.TagLib.ID3v1.3pm.gz
   /usr/share/man/man3/Audio.TagLib.ID3v1.GenreMap.3pm.gz
   /usr/share/man/man3/Audio.TagLib.ID3v1.GenreMap.Iterator.3pm.gz
@@ -158,10 +157,10 @@ Files included in the binary package:
   /usr/share/man/man3/Audio.TagLib.MPEG.Header.3pm.gz
   /usr/share/man/man3/Audio.TagLib.MPEG.Properties.3pm.gz
   /usr/share/man/man3/Audio.TagLib.MPEG.XingHeader.3pm.gz
+  /usr/share/man/man3/Audio.TagLib.Ogg.FLAC.File.3pm.gz
   /usr/share/man/man3/Audio.TagLib.Ogg.FieldListMap.3pm.gz
   /usr/share/man/man3/Audio.TagLib.Ogg.FieldListMap.Iterator.3pm.gz
   /usr/share/man/man3/Audio.TagLib.Ogg.File.3pm.gz
-  /usr/share/man/man3/Audio.TagLib.Ogg.FLAC.File.3pm.gz
   /usr/share/man/man3/Audio.TagLib.Ogg.Page.3pm.gz
   /usr/share/man/man3/Audio.TagLib.Ogg.PageHeader.3pm.gz
   /usr/share/man/man3/Audio.TagLib.Ogg.Vorbis.File.3pm.gz
@@ -173,11 +172,14 @@ Files included in the binary package:
   /usr/share/man/man3/Audio.TagLib.Tag.3pm.gz
   /usr/share/man/man3/Audio.TagLib.Vorbis.File.3pm.gz
   /usr/share/man/man3/Audio.TagLib.Vorbis.Properties.3pm.gz
-  /usr/share/perl/cygwin-pods/Audio-TagLib.pod
+  /usr/share/perl/cygwin-pods/5.8/Audio-TagLib.pod
 
 ------------------
 
 Port Notes:
+
+----- version 1.43-1 -----
+Version bump.
 
 ----- version 1.42-1 -----
 Version bump.
