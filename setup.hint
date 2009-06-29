@@ -1,4 +1,4 @@
 category: Perl Audio
-requires: cygwin perl libiconv2 taglib
+requires: perl libiconv2 taglib
 sdesc: "Perl bindings for TagLib audio tag library"
 ldesc: "Perl bindings for TagLib audio tag library"
